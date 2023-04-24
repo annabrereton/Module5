@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animations</title>
+    <style>
+        #target {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            animation-name: movingBox;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out; /*linear, step-start*/
+        }
+        /*THIS CREATES A START AND END POINT FOR OUR ANIMATION*/
+        /*@keyframes movingBox {*/
+        /*    from {*/
+        /*        left: 10px;*/
+        /*    }*/
+        /*    to {*/
+        /*        left: 200px;*/
+        /*    }*/
+        /*}*/
+        /*THIS CREATES A MORE COMPLEX ANIMATION - BOX MOVES AROUND THE SCREEN*/
+        @keyframes movingBox {
+            0% {
+                left: 10px;
+                background-color: blanchedalmond;
+            }
+            50% {
+                left: 1000px;
+                background-color: chartreuse;
+            }
+            66% {
+                top: 20px;
+                left: 750px;
+                background-color: hotpink;
+            }
+            100% {
+                left: 200px;
+                top: 100px;
+                background-color: thistle;
+            }
+        }
+
+        /*THIS CREATES A MORE COMPLEX ANIMATION - BOX MOVES AROUND THE SCREEN*/
+        @keyframes movingBox {
+            0% {
+                left: 10px;
+                background-color: blanchedalmond;
+                transform: rotate(0deg);
+            }
+            50% {
+                left: 1000px;
+                background-color: chartreuse;
+                transform: rotate(360deg);
+            }
+            66% {
+                top: 20px;
+                left: 750px;
+                background-color: hotpink;
+                transform: rotate(-90deg) scale(6);
+            }
+            100% {
+                left: 200px;
+                top: 100px;
+                background-color: thistle;
+                transform: rotate(90deg) skew(20deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div id="target"></div>
+</body>
+</html>
