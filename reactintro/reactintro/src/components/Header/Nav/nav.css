@@ -1,0 +1,9 @@
+.navbar {
+    margin: 0;
+    padding: 1.5rem;
+    background-color: aqua;
+    color: hotpink;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}

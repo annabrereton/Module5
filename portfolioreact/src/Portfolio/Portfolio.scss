@@ -1,0 +1,98 @@
+@import '../variables.scss';
+
+.portfolio {
+  margin-top: 1.5rem;
+  margin-bottom: 8rem;
+  color: #307865;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+
+  h1 {
+    width: 75%;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-align: center;
+
+    h2 {
+      width: 75%;
+      margin: 0;
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .project-list {
+      width: 75%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      .project-card {
+        border-bottom: 0.2rem solid #EAA743;
+
+        article {
+          padding: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 2rem;
+
+          h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+          }
+
+          .project-image {
+            width: 100%;
+            height: auto;
+          }
+
+          .project-links {
+            width: 100%;
+            color: #539382;
+            font-size: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-self: center;
+            gap: 2rem;
+
+            .project-link {
+              &:hover {
+                color: $hover-text-color;
+              }
+            }
+          }
+
+          .project-description {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .project-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .project-card {
+      width: 30%;
+    }
+  }
+}

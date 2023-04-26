@@ -1,0 +1,98 @@
+@import '../variables.scss';
+
+.logo-name-cv {
+  margin: 1.5rem 0 5rem;
+  font-size: 1.5rem;
+  color: #3B816F;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  flex: 1;
+
+  .logo {
+    width: 90%;
+    margin: 5rem 0 5rem;
+
+    .fade-in-image {
+      animation: fadeIn 11s;
+      transition-timing-function: cubic-bezier(0.42, 0, 1.0, 1.0);
+
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .name-cv {
+    //width: 90%;
+
+    h1 {
+      margin: 0;
+      padding-bottom: 2rem;
+      font-size: 1.5rem;
+      color: #3B816F;
+      display: flex;
+    }
+
+    .cv {
+      text-align: center;
+
+      .fa-download {
+
+        .fa-solid.fa-download:hover {
+          color: #A16812;
+        }
+      }
+      .cv-pdf {
+
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .logo-name-cv {
+    width: 90%;
+    margin: 2rem auto;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .logo {
+      width: 45%;
+      margin: 0;
+    }
+
+    .name-cv {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (min-width: 750px) {
+
+  .logo-name-cv {
+    width: 90%;
+    margin: 4rem auto 5rem;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .logo {
+      width: 45%;
+      margin: 0;
+    }
+
+    .name-cv {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

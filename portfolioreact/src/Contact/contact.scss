@@ -1,0 +1,63 @@
+@import '../variables.scss';
+
+.contact-container {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: $primary-text-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  .contact-info {
+    width: 75%;
+    margin: 0;
+    font-size: 1.5rem;
+
+    h1 {
+      width: 75%;
+      margin: 1.5rem 0;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .contact-text {
+
+    }
+  }
+
+  .logo {
+    width: 100%;
+    margin: 1rem 0 3rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .contact-container {
+    width: 80%;
+    margin: 1.5rem auto;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .logo {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .contact-container {
+    width: 90%;
+    padding-left: 4rem;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .contact-info {
+    padding-bottom: 3rem;
+  }
+}

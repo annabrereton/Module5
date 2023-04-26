@@ -1,0 +1,12 @@
+/*If I use a h1 selector here it will also be applied to other folders - so important to use classes*/
+
+.header {
+    margin: 0;
+    color: chartreuse;
+    background-color: hotpink;
+    text-decoration: underline;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
