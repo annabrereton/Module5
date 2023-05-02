@@ -15,8 +15,8 @@ const Form = () => {
     const handleSubmit = (event) => {
         // prevents the submit button from refreshing the page
         event.preventDefault();
-        // setFinanceData({ amount: "", salary: "", percentage: "" })
-        // console.log(financeData);
+        setFinanceData({ amount: "", salary: "", percentage: "" })
+        console.log(financeData);
         const amountEntry = parseInt(financeData.amount)
         console.log(amountEntry)
         const adminFee = parseInt(financeData.amount) * 0.05
@@ -138,11 +138,11 @@ const Form = () => {
         </form>
 
 
-        {/*<p>The upfront admin fee is {adminFee}.</p>*/}
+        {/*<p>The upfront admin fee is {financeData.amount * 0.05}.</p>*/}
 
-        {/*<p>And the loan amount is {amount} which will take {monthsToPay} months to pay back.</p>*/}
+        {/*<p>And the loan amount is {parseInt(financeData.amount)} which will take {(parseInt(financeData.amount) + (parseInt(financeData.amount) * 0.05)) / (((parseInt(financeData.salary / 12) * parseInt(financeData.percentage) / 100)} months to pay back.</p>*/}
 
-        {/*<p>With a total cost of {totalAmount}.</p>*/}
+        {/*<p>With a total cost of {parseInt(financeData.amount) + (parseInt(financeData.amount) * 0.05)}.</p>*/}
     </>
     )
 }
