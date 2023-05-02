@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+
+  .header-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 1.2rem;
+    background-color: #004E5A;
+    color: #FFFFFF;
+
+    h1 {
+      margin: 0;
+    }
+
+    .sub-heading {
+      width: 65%;
+      font-size: 0.6rem;
+    }
+
+    .rules {
+      border-top: 0.1rem solid #004651;
+      font-size: 0.8rem;
+    }
+  }
+}
